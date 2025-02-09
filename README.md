@@ -1,7 +1,3 @@
-Below is a clear, markdown‐formatted documentation for the entire pipeline. This document explains each section and its purpose, and it also describes how a super‑resolution GAN (implemented here via OpenCV’s DNN module with a pre‑trained EDSR model) is integrated to improve performance. You can include this documentation with your code in a README file or as markdown cells in your Kaggle Notebook.
-
----
-
 # 3D Face Reconstruction Pipeline for Forensic Verification
 
 This documentation describes a 3D face reconstruction pipeline designed for forensic verification. The pipeline processes face images (from the CelebA dataset), detects facial landmarks using a pre‑trained dlib model, constructs a coarse 3D face model, estimates camera parameters, refines the model through iterative depth adjustments, and finally visualizes the reconstructed 3D model. Additionally, a super‑resolution step using a GAN-inspired approach (via OpenCV’s DNN module with an EDSR model) is integrated to enhance low‑quality images before processing.
